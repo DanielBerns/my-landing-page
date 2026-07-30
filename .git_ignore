@@ -1,0 +1,18 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+
+# Large raw design source files (keep exported web assets in /assets/images)
+*.psd
+*.ai
+*.sketch
+*.fig
+
+# Build outputs (if using static generators or bundlers later)
+dist/
+build/
+.cache/
