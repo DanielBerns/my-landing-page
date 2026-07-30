@@ -261,12 +261,12 @@ h1, h2, h3, h4 {
 }
 
 .btn-secondary {
-    background-color: var(--text-dark);
+    background: linear-gradient(135deg, var(--primary), #4f46e5);
     color: #ffffff;
 }
 
 .btn-secondary:hover {
-    background-color: #1e293b;
+    background: linear-gradient(135deg, var(--primary-hover), #4338ca);
     color: #ffffff;
     transform: translateY(-1px);
 }
