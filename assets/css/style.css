@@ -695,10 +695,8 @@ h1, h2, h3, h4 {
 }
 
 .contact-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    align-items: start;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .contact-info .section-tag {
