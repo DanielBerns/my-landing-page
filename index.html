@@ -3,29 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Sitio | Landing Page</title>
-    <meta name="description" content="Descripción clara y concisa de tu propuesta de valor o servicio para buscadores.">
+    <title>DB Tech Solutions | Consultoría Tecnológica en Buenos Aires</title>
+    <meta name="description" content="Soluciones de software a medida, consultoría en datos e inteligencia artificial para empresas argentinas. Transformá tu negocio con tecnología.">
 
     <!-- Open Graph / WhatsApp / Social Media Meta Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tu-dominio.com.ar/">
-    <meta property="og:title" content="Tu Sitio | Landing Page">
-    <meta property="og:description" content="Descripción atractiva para cuando el enlace sea compartido en WhatsApp o redes sociales.">
-    <meta property="og:image" content="https://tu-dominio.com.ar/assets/images/og-image.png">
+    <meta property="og:url" content="https://www.daniel-berns.com.ar/">
+    <meta property="og:title" content="DB Tech Solutions | Consultoría Tecnológica">
+    <meta property="og:description" content="Desarrollo de software, análisis de datos e IA para empresas que quieren crecer con tecnología.">
+    <meta property="og:image" content="https://www.daniel-berns.com.ar/assets/images/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="es_AR">
-    <meta property="og:site_name" content="Nombre de Tu Proyecto">
+    <meta property="og:site_name" content="DB Tech Solutions">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Tu Sitio | Landing Page">
-    <meta name="twitter:description" content="Descripción breve de tu proyecto.">
-    <meta name="twitter:image" content="https://tu-dominio.com.ar/assets/images/og-image.png">
+    <meta name="twitter:title" content="DB Tech Solutions | Consultoría Tecnológica">
+    <meta name="twitter:description" content="Desarrollo de software, análisis de datos e IA para empresas argentinas.">
+    <meta name="twitter:image" content="https://www.daniel-berns.com.ar/assets/images/og-image.png">
 
     <!-- Favicons -->
-    <link rel="icon" href="assets/images/favicon.ico" sizes="any">
-    <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -36,17 +41,25 @@
 <body>
 
     <!-- Header / Nav -->
-    <header class="site-header">
+    <header class="site-header" id="site-header">
         <div class="container">
-            <a href="#" class="logo">
-                <img src="assets/images/logo.svg" alt="Logo" width="120" height="40">
+            <a href="#" class="logo" aria-label="DB Tech Solutions — Inicio">
+                <img src="assets/images/logo.svg" alt="DB Tech Solutions" width="180" height="40">
             </a>
-            <nav class="main-nav">
+
+            <!-- Mobile menu toggle -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="main-nav" id="main-nav">
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
                     <li><a href="#recursos">Documentos</a></li>
-                    <li><a href="#contacto" class="btn btn-secondary">Contacto</a></li>
+                    <li><a href="#contacto" class="btn btn-secondary btn-sm">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -57,36 +70,153 @@
         <section id="inicio" class="hero-section">
             <div class="container hero-content">
                 <div class="hero-text">
-                    <h1>Título Principal de Tu Landing Page</h1>
-                    <p>Un subtítulo explicativo que presenta la solución, servicio o producto de forma directa.</p>
+                    <span class="hero-badge">🚀 Innovación & Tecnología</span>
+                    <h1>Transformamos ideas en soluciones digitales de alto impacto</h1>
+                    <p>Somos un equipo de expertos en desarrollo de software, ciencia de datos e inteligencia artificial. Ayudamos a empresas argentinas a crecer con tecnología de vanguardia.</p>
                     <div class="hero-actions">
-                        <a href="#contacto" class="btn btn-primary">Acción Principal</a>
-                        <a href="#recursos" class="btn btn-outline">Ver Recursos PDF</a>
+                        <a href="#contacto" class="btn btn-primary">Agendar Reunión</a>
+                        <a href="#servicios" class="btn btn-outline">Explorar Servicios</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <strong>150+</strong>
+                            <span>Proyectos entregados</span>
+                        </div>
+                        <div class="stat">
+                            <strong>40+</strong>
+                            <span>Clientes activos</span>
+                        </div>
+                        <div class="stat">
+                            <strong>98%</strong>
+                            <span>Satisfacción</span>
+                        </div>
                     </div>
                 </div>
                 <div class="hero-media">
-                    <img src="assets/images/og-image.png" alt="Vista previa del servicio" width="600" height="400" loading="eager">
+                    <img src="assets/images/og-image.png" alt="Equipo de DB Tech Solutions trabajando en un proyecto" width="600" height="400" loading="eager">
                 </div>
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section id="caracteristicas" class="features-section">
+        <!-- Services / Features Section -->
+        <section id="servicios" class="features-section">
             <div class="container">
-                <h2>Qué Ofrecemos</h2>
+                <div class="section-header">
+                    <span class="section-tag">Nuestros Servicios</span>
+                    <h2>Soluciones tecnológicas a medida</h2>
+                    <p class="section-desc">Ofrecemos un espectro completo de servicios para digitalizar y potenciar tu empresa.</p>
+                </div>
                 <div class="features-grid">
-                    <article class="feature-card">
-                        <h3>Característica 1</h3>
-                        <p>Detalle breve de este beneficio o funcionalidad.</p>
+                    <article class="feature-card" id="feature-software">
+                        <div class="feature-icon">💻</div>
+                        <h3>Desarrollo de Software</h3>
+                        <p>Aplicaciones web y móviles con arquitecturas modernas, diseñadas para escalar con tu negocio. React, Node.js, Python y más.</p>
                     </article>
-                    <article class="feature-card">
-                        <h3>Característica 2</h3>
-                        <p>Detalle breve de este beneficio o funcionalidad.</p>
+                    <article class="feature-card" id="feature-data">
+                        <div class="feature-icon">📊</div>
+                        <h3>Ciencia de Datos</h3>
+                        <p>Dashboards interactivos, pipelines de datos y modelos predictivos que transforman tu información en decisiones estratégicas.</p>
                     </article>
-                    <article class="feature-card">
-                        <h3>Característica 3</h3>
-                        <p>Detalle breve de este beneficio o funcionalidad.</p>
+                    <article class="feature-card" id="feature-ai">
+                        <div class="feature-icon">🤖</div>
+                        <h3>Inteligencia Artificial</h3>
+                        <p>Chatbots inteligentes, procesamiento de lenguaje natural y automatización de procesos con IA generativa de última generación.</p>
                     </article>
+                    <article class="feature-card" id="feature-cloud">
+                        <div class="feature-icon">☁️</div>
+                        <h3>Cloud & DevOps</h3>
+                        <p>Migración a la nube, infraestructura como código y pipelines CI/CD en AWS, GCP y Azure para máxima disponibilidad.</p>
+                    </article>
+                    <article class="feature-card" id="feature-consulting">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Consultoría Estratégica</h3>
+                        <p>Auditorías tecnológicas, roadmaps de producto y definición de arquitectura para que tu inversión tenga el máximo retorno.</p>
+                    </article>
+                    <article class="feature-card" id="feature-training">
+                        <div class="feature-icon">🎓</div>
+                        <h3>Capacitación</h3>
+                        <p>Workshops y cursos in-company en Python, machine learning, desarrollo web y buenas prácticas de ingeniería de software.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="nosotros" class="about-section">
+            <div class="container about-content">
+                <div class="about-text">
+                    <span class="section-tag">Quiénes Somos</span>
+                    <h2>Más de 10 años creando tecnología que importa</h2>
+                    <p>DB Tech Solutions nació en Buenos Aires con una misión clara: acercar tecnología de primer nivel a empresas de todos los tamaños en Argentina y Latinoamérica.</p>
+                    <p>Nuestro equipo combina experiencia en ingeniería de software, ciencia de datos e investigación académica para ofrecer soluciones que realmente transforman negocios.</p>
+                    <ul class="about-list">
+                        <li>✅ Equipo multidisciplinario con +10 años de experiencia</li>
+                        <li>✅ Metodologías ágiles y entregas incrementales</li>
+                        <li>✅ Soporte continuo y acompañamiento post-entrega</li>
+                        <li>✅ Partners certificados de AWS y Google Cloud</li>
+                    </ul>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card-stack">
+                        <div class="mini-card mc-1">
+                            <span class="mc-emoji">🇦🇷</span>
+                            <strong>Buenos Aires</strong>
+                            <span>Sede central</span>
+                        </div>
+                        <div class="mini-card mc-2">
+                            <span class="mc-emoji">🌎</span>
+                            <strong>LATAM</strong>
+                            <span>Clientes regionales</span>
+                        </div>
+                        <div class="mini-card mc-3">
+                            <span class="mc-emoji">⚡</span>
+                            <strong>24/7</strong>
+                            <span>Soporte disponible</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonios" class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Testimonios</span>
+                    <h2>Lo que dicen nuestros clientes</h2>
+                    <p class="section-desc">Empresas que confiaron en nosotros y lograron resultados concretos.</p>
+                </div>
+                <div class="testimonials-grid">
+                    <blockquote class="testimonial-card" id="testimonial-1">
+                        <p class="testimonial-text">"DB Tech nos ayudó a migrar toda nuestra plataforma a la nube en tiempo récord. El equipo fue excepcional y el resultado superó nuestras expectativas."</p>
+                        <footer class="testimonial-author">
+                            <div class="author-avatar">ML</div>
+                            <div>
+                                <strong>María López</strong>
+                                <span>CTO, FinSolutions S.A.</span>
+                            </div>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="testimonial-card" id="testimonial-2">
+                        <p class="testimonial-text">"Gracias al modelo de IA que desarrollaron, redujimos nuestros costos operativos en un 35%. Son verdaderos expertos en lo que hacen."</p>
+                        <footer class="testimonial-author">
+                            <div class="author-avatar">CR</div>
+                            <div>
+                                <strong>Carlos Rodríguez</strong>
+                                <span>Director, LogiTrack Argentina</span>
+                            </div>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="testimonial-card" id="testimonial-3">
+                        <p class="testimonial-text">"La capacitación en Python que nos dieron transformó a nuestro equipo. Hoy podemos analizar nuestros datos internamente sin depender de terceros."</p>
+                        <footer class="testimonial-author">
+                            <div class="author-avatar">AG</div>
+                            <div>
+                                <strong>Ana García</strong>
+                                <span>Gerenta de Datos, MercadoPlus</span>
+                            </div>
+                        </footer>
+                    </blockquote>
                 </div>
             </div>
         </section>
@@ -94,18 +224,114 @@
         <!-- Downloads / PDFs Section -->
         <section id="recursos" class="resources-section">
             <div class="container">
-                <h2>Recursos y Descargas</h2>
-                <p>Accede a nuestra documentación oficial en PDF:</p>
+                <div class="section-header">
+                    <span class="section-tag">Recursos</span>
+                    <h2>Documentación y Descargas</h2>
+                    <p class="section-desc">Accedé a nuestros materiales técnicos, brochures y casos de estudio.</p>
+                </div>
 
                 <div class="resources-list">
-                    <a href="docs/pdf/documento-ejemplo.pdf" class="resource-item" download target="_blank" rel="noopener">
+                    <a href="docs/pdf/documento-ejemplo.pdf" class="resource-item" download target="_blank" rel="noopener" id="resource-brochure">
                         <span class="file-icon">📄</span>
                         <div class="file-info">
-                            <strong>Ficha Técnica / Brochure (PDF)</strong>
-                            <small>Formato PDF — Descarga directa</small>
+                            <strong>Brochure Corporativo 2026 (PDF)</strong>
+                            <small>Nuestros servicios, equipo y casos de éxito — 12 páginas</small>
                         </div>
                         <span class="download-btn">Descargar</span>
                     </a>
+                    <a href="docs/pdf/documento-ejemplo.pdf" class="resource-item" download target="_blank" rel="noopener" id="resource-casestudy">
+                        <span class="file-icon">📊</span>
+                        <div class="file-info">
+                            <strong>Caso de Estudio: Migración Cloud (PDF)</strong>
+                            <small>Cómo ayudamos a FinSolutions a escalar su infraestructura</small>
+                        </div>
+                        <span class="download-btn">Descargar</span>
+                    </a>
+                    <a href="docs/pdf/documento-ejemplo.pdf" class="resource-item" download target="_blank" rel="noopener" id="resource-whitepaper">
+                        <span class="file-icon">🤖</span>
+                        <div class="file-info">
+                            <strong>White Paper: IA Generativa para Empresas (PDF)</strong>
+                            <small>Guía práctica para implementar IA en tu organización</small>
+                        </div>
+                        <span class="download-btn">Descargar</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <span class="section-tag">Contacto</span>
+                        <h2>¿Tenés un proyecto en mente?</h2>
+                        <p>Escribinos y te respondemos en menos de 24 horas. También podés encontrarnos en nuestras redes sociales.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <div>
+                                    <strong>Email</strong>
+                                    <a href="mailto:hola@daniel-berns.com.ar">hola@daniel-berns.com.ar</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📱</span>
+                                <div>
+                                    <strong>WhatsApp</strong>
+                                    <a href="https://wa.me/5491155551234" target="_blank" rel="noopener">+54 9 11 5555-1234</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <div>
+                                    <strong>Oficina</strong>
+                                    <span>Av. Corrientes 1234, Piso 8<br>CABA, Buenos Aires, Argentina</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="social-links">
+                            <a href="https://github.com/DanielBerns" target="_blank" rel="noopener" aria-label="GitHub" class="social-link" id="social-github">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </a>
+                            <a href="https://linkedin.com/in/danielberns" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link" id="social-linkedin">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>
+                            <a href="https://twitter.com/danielberns" target="_blank" rel="noopener" aria-label="X (Twitter)" class="social-link" id="social-twitter">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            </a>
+                            <a href="https://instagram.com/dbtechsolutions" target="_blank" rel="noopener" aria-label="Instagram" class="social-link" id="social-instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                            </a>
+                            <a href="https://youtube.com/@dbtechsolutions" target="_blank" rel="noopener" aria-label="YouTube" class="social-link" id="social-youtube">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="contact-name">Nombre completo</label>
+                            <input type="text" id="contact-name" name="name" required placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-company">Empresa <small>(opcional)</small></label>
+                            <input type="text" id="contact-company" name="company" placeholder="Tu empresa">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Mensaje</label>
+                            <textarea id="contact-message" name="message" rows="5" required placeholder="Contanos sobre tu proyecto..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="contact-submit">Enviar Mensaje</button>
+                        <p class="form-note">🔒 Tu información es confidencial. No compartimos tus datos.</p>
+                    </form>
                 </div>
             </div>
         </section>
@@ -114,7 +340,49 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2026 Tu Proyecto. Todos los derechos reservados.</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.svg" alt="DB Tech Solutions" width="160" height="36" class="footer-logo">
+                    <p>Soluciones tecnológicas de alto impacto para empresas que quieren crecer con innovación.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#feature-software">Desarrollo de Software</a></li>
+                        <li><a href="#feature-data">Ciencia de Datos</a></li>
+                        <li><a href="#feature-ai">Inteligencia Artificial</a></li>
+                        <li><a href="#feature-cloud">Cloud & DevOps</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:hola@daniel-berns.com.ar">hola@daniel-berns.com.ar</a></li>
+                        <li><a href="https://wa.me/5491155551234" target="_blank" rel="noopener">+54 9 11 5555-1234</a></li>
+                        <li>Av. Corrientes 1234, Piso 8</li>
+                        <li>CABA, Argentina</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DB Tech Solutions. Todos los derechos reservados.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/DanielBerns" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+                    <a href="https://linkedin.com/in/danielberns" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://twitter.com/danielberns" target="_blank" rel="noopener" aria-label="X">X</a>
+                    <a href="https://instagram.com/dbtechsolutions" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+                </div>
+            </div>
         </div>
     </footer>
 
